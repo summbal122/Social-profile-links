@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  color: var(--main-color);
+  font-family: inter, Impact,'Arial Narrow Bold', sans-serif;
+}
+body{
+  height: 100vh;
+background-color: var(--body-color);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+:root{
+  --body-color:  hsl(0, 0%, 8%);
+  --buttons-color: hsl(0, 0%, 20%);
+  --profile-color: hsl(0, 0%, 12%) ;
+  --location-color: hsl(75, 94%, 57%);
+  --main-color: hsl(0, 0%, 100%);
+}
+h1{
+  font-size: 1.7rem;
+  font-weight: 500; 
+}
+p{
+  font-size: 1.3rem;
+  margin-top: .7rem;
+}
+.main-section{
+  background-color: var(--profile-color);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem; 
+}
+.main-section .profile-section{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-img{
+ width:8rem;
+ border-radius:50% ;
+ -webkit-border-radius:50% ;
+ -moz-border-radius:50% ;
+ -ms-border-radius:50% ;
+ -o-border-radius:50% ;
+}
+.location-para{
+  color: var(--location-color);
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+
+}
+.main-section .buttons-div{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.buttons{
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border-style: none;
+  padding: 1.1rem;
+  color: var(--main-color);
+  background-color: var(--buttons-color);
+  font-family: inter;
+  font-size: 1.2rem;
+  font-weight: 700;
+  &:hover{
+    background-color: var(--location-color);
+    color: var(--profile-color); 
+    cursor: pointer;
+}
+}
+
